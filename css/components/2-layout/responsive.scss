@@ -1,0 +1,115 @@
+// 1380px
+@include xxlg-xxxlg {
+  // base start
+  h1 {
+    font-size: 54px;
+
+    small {
+      font-size: 28px;
+      line-height: 102.3%;
+    }
+  }
+  h2 {
+    font-size: 46px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .auto__container {
+    padding: 0 24px;
+  }
+  @include footer-xxlg-xxxlg;
+  // base end
+  // index start
+  @include intro-xxlg-xxxlg;
+  @include join-xxlg-xxxlg;
+  // index end
+}
+// 1024px
+@include lg-xlg {
+  // base start
+  h1 {
+    font-size: 48px;
+    small {
+      font-size: 24px;
+    }
+  }
+  h2 {
+    font-size: 32px;
+  }
+  // base end
+  // index start
+  @include intro-lg-xlg;
+  @include join-lg-xlg;
+  @include info-lg-xlg;
+  @include feature-lg-xlg;
+  @include how-lg-xlg;
+  @include more-lg-xlg;
+  // index end
+}
+// 840px
+@include md-lg {
+  // base start
+  @include nav-md-lg;
+  @include footer-md-lg;
+
+  // base end
+  // index start
+  @include intro-md-lg;
+  @include feature-md-lg;
+  @include more-md-lg;
+
+  // index end
+}
+// 700px
+@include sm-md {
+  // base start
+  h1 {
+    font-size: 40px;
+    small {
+      font-size: 20px;
+    }
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  @include footer-sm-md;
+
+  // base end
+  // index start
+  @include intro-sm-md;
+  @include join-sm-md;
+  // index end
+}
+// 540px
+@include xsm-sm {
+  // base start
+  @include nav-xsm-sm;
+  @include header-xsm-sm;
+  @include footer-xsm-sm;
+  @include footer-xsm-sm;
+  .auto__container {
+    padding: 0 15px;
+  }
+  .modal {
+    &__inner {
+      padding: 32px 20px;
+    }
+  }
+  // base end
+  // index start
+  @include join-xsm-sm;
+  @include feature-xsm-sm;
+  @include how-xsm-sm;
+  @include more-xsm-sm;
+  // index end
+}

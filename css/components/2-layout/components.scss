@@ -1,0 +1,84 @@
+h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 80%;
+  text-transform: capitalize;
+  color: #3454d1;
+  font-style: italic;
+  small {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 102.3%;
+    text-transform: capitalize;
+    color: #000000;
+    font-style: normal;
+  }
+}
+h2 {
+  color: $black;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 57.2px */
+  text-transform: capitalize;
+  span {
+    color: $primary;
+    font-style: italic;
+    font-weight: 800;
+  }
+}
+h4 {
+  font-family: $hind;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+  &.nun {
+    font-weight: 700;
+    font-family: $main-font;
+  }
+}
+h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: $black;
+}
+h6 {
+  font-family: $hind;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  &.nun {
+    font-weight: 700;
+    font-family: $main-font;
+  }
+}
+p {
+  &.sm {
+    font-size: 12px;
+  }
+}
+.wrapper {
+  overflow: hidden;
+}
+.button {
+  display: inline-block;
+  cursor: pointer;
+  @include transition;
+  &.light {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 19px;
+    background: $second;
+    color: $white;
+    border-radius: 50px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
