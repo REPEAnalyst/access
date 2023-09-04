@@ -1599,7 +1599,7 @@ p.sm {
   .intro__inner-image {
     position: relative;
     left: 0;
-    width: 50%;
+    width: 100%;
     padding-left: 10%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;

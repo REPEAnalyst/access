@@ -1,5 +1,11 @@
 {
   "projects": {
     "default": "access11022"
+  },
+  "targets": {},
+  "etags": {
+    "access11022": {
+      "extensionInstances": {}
+    }
   }
 }
