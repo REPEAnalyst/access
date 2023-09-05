@@ -9,6 +9,22 @@
       gtag('js', new Date());
       gtag('config', 'G-R43REW7C8R');
     </script>
+    <!-- Event snippet for Click Button conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11225081677/idz_CJXf-dwYEM3OxOgp',
+            'event_callback': callback
+        });
+        return false;
+      }
+      </script>  
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +72,7 @@
               <a href="#top" class="nav__inner-link">Home </a>
               <a href="#how" class="nav__inner-link">How It Works </a>
               <a href="#benefits" class="nav__inner-link">Benefits </a>
-              <button type="button" class="button light vrlps-trigger">
+              <button type="button" onclick="gtag_report_conversion()" class="button light vrlps-trigger">
                 Join Waitlist
               </button>
             </div>
@@ -85,7 +101,7 @@
               <h4>🌟 Introducing: The Home Launch Program
               </h4>
               <p>0% Interest – Fast Approval Process – Your Path to Homeownership Starts Here!</p>
-              <button type="button" class="button light vrlps-trigger">
+              <button type="button" onclick="gtag_report_conversion()" class="button light vrlps-trigger">
                 Join Waitlist
               </button>
               <p class="sm">
@@ -159,7 +175,7 @@
           <div class="feature__head">
             <h2>How It <span>Works</span></h2>
             <p>
-              Get funds to help you buy your dream home. Enjoy cash paid to you every month for up to two years - then benefit from interest-free repayments
+              Receive monthly cash payments to support your home purchase. Enjoy this support for up to two years, and repay without any interest
             </p>
           </div>
           <div class="feature__inner">
@@ -167,9 +183,9 @@
               <div class="featureItem__icon">
                 <img src="images/features/1.svg" alt="" />
               </div>
-              <h5>No Interest Loan</h5>
+              <h5>Zero-Interest Loan</h5>
               <p>
-                Get monthly cash payments to you every month for up to two years
+                Benefit from monthly cash injections for up to 24 months
               </p>
             </div>
             <div class="featureItem uniq">
@@ -178,7 +194,7 @@
               </div>
               <h5>Easy Payback</h5>
               <p>
-                Return the amount over 5 years, interest-free
+                Spread your repayments over 5 years, all at 0% interest
               </p>
             </div>
             <div class="featureItem">
@@ -305,7 +321,7 @@
               </p>
               <p>
               </p>
-              <button type="button" class="button light vrlps-trigger">
+              <button type="button" onclick="gtag_report_conversion()" class="button light vrlps-trigger">
                 Learn More
               </button>
             </div>
@@ -337,7 +353,7 @@
         <div class="auto__container">
           <div class="join__inner">
             <h2>Join to <span> unlock</span> home bliss</h2>
-            <button class="button light vrlps-trigger">Join Waitlist</button>
+            <button class="button light vrlps-trigger" onclick="gtag_report_conversion()">Join Waitlist</button>
             <p class="sm">
               Secure your spot. Join now and refer friends to climb the ranks - 
               be among the first 100 to unlock exclusive early access. 
