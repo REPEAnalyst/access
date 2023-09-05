@@ -612,6 +612,10 @@ p.sm {
   width: calc(40% - 15px);
   max-width: 425px;
 }
+.intro__subtitle {
+  background-color: lightblue;
+  font-weight: 600;
+}
 .intro__inner-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,6 +636,7 @@ p.sm {
 }
 .intro h1 {
   margin-bottom: 10px;
+  line-height: 100%;
 }
 .intro .button {
   margin-bottom: 10px;
@@ -1148,7 +1153,7 @@ p.sm {
     font-size: 54px;
   }
   h1 small {
-    font-size: 28px;
+    font-size: 34px;
     line-height: 102.3%;
   }
   h2 {
