@@ -623,7 +623,7 @@ p.sm {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  width: 140%;
+  width: 90%;
   left: 22%;
   max-width: 1734px;
 }
@@ -1701,8 +1701,8 @@ p.sm {
     position: absolute;
     top: 0;
     left: 0;
-    -o-object-position: top;
-       object-position: top;
+    -o-object-position: center 16%;
+       object-position: center 16%;
   }
   .how .slick-track {
     display: -webkit-box !important;
