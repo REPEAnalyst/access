@@ -1150,6 +1150,7 @@ p.sm {
 @media (max-width: 1380px) {
   h1 {
     font-size: 54px;
+    font-weight: bold;
   }
   h1 small {
     font-size: 34px;
